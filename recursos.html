@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos para Desarrollo de Videojuegos - GameDev</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .click-img {
+    width: 150px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 5px;
+    }
+
+    .click-img.enlarged {
+    transform: scale(2.5);
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logo.png" alt="Logo GameDev" class="logo-img">
+            <span class="logo-text">GameDev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="roles.html">👥 Roles</a></li>
+            <li><a href="recursos.html">🛠️ Recursos</a></li>
+            <li><a href="comunidad.html">💬 Comunidad</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-section">
+            <div class="card">
+                <div class="card-header">
+                    🧰
+                    <h2>Recursos para Aprender</h2>
+                </div>
+                <div class="card-body">
+                    <div class="resources-container">
+                        <center><div class="resource-category">
+                                <h3>🎓 Educación Formal</h3>
+                                <ul class="styled-list">
+                                    <li>Cursos online (Udemy, Coursera, edX)</li>
+                                    <li>Documentación oficial de motores de juego</li>
+                                    <li>Libros especializados y papers académicos</li>
+                                    <img src="recursos.png" alt="udemi,edx"  class="click-img" onclick="toggleSize(this)">
+                                    <img src="motoresdevideojuegos1.jpg" alt="documentos"  class="click-img" onclick="toggleSize(this)">
+                                    <script>
+                                        function toggleSize(img) {
+                                        img.classList.toggle("enlarged");
+                                        }
+                                    </script>
+                                </ul>
+                            </div></center>
+                        <center><div class="resource-category">
+                                <h3>👐 Comunidad</h3>
+                                <ul class="styled-list">
+                                    <li>Foros (Reddit, Discord, especializados)</li>
+                                    <li>Game Jams (eventos de desarrollo rápido)</li>
+                                    <li>Meetups y conferencias</li>
+                                    <img src="recursos2.png" alt="redit y discord"  class="click-img" onclick="toggleSize(this)">
+                                    <img src="gamejam.jpg" alt="gamejam"  class="click-img" onclick="toggleSize(this)">
+                                    <script>
+                                        function toggleSize(img) {
+                                        img.classList.toggle("enlarged");
+                                        }
+                                    </script>
+                                </ul>
+                            </div></center>
+                        </center><div class="resource-category">
+                                <h3>🔧 Herramientas</h3>
+                                <ul class="styled-list">
+                                    <li>Unity, Unreal Engine, Godot</li>
+                                    <li>Blender, Photoshop, Aseprite</li>
+                                    <li>Fmod, Wwise, Audacity</li>
+                                    <img src="./unreal-logo.png" alt="Unreal Engine Logo"  class="click-img" onclick="toggleSize(this)">
+                                    <img src="./blender-logo.png" alt="Blender Logo"  class="click-img" onclick="toggleSize(this)">
+                                    <script>
+                                        function toggleSize(img) {
+                                        img.classList.toggle("enlarged");
+                                        }
+                                    </script>
+                                </ul>
+                            </div></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GameDev</h3>
+                <p>Tu portal de aprendizaje para el desarrollo de videojuegos profesionales e independientes.</p>
+                <div class="footer-logo">
+                    <img src="./logo.png" alt="Logo GameDev" class="logo-img">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="roles.html">Roles</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

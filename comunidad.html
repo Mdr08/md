@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad de Desarrollo de Videojuegos - GameDev</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .click-img {
+    width: 150px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 5px;
+    }
+
+    .click-img.enlarged {
+    transform: scale(2.5);
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logo.png" alt="Logo GameDev" class="logo-img">
+            <span class="logo-text">GameDev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="roles.html">👥 Roles</a></li>
+            <li><a href="recursos.html">🛠️ Recursos</a></li>
+            <li><a href="comunidad.html">💬 Comunidad</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="comunidad content-section">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-comments icon-large"></i>
+                <h2>💬 Únete a la Comunidad</h2>
+            </div>
+        
+            <center><div class="card-body">
+                    <p class="intro-text">
+                    🎮 <strong>¡Crea, comparte y evoluciona junto a otros apasionados del desarrollo de videojuegos!</strong><br>
+                    Aquí no estás solo: cada línea de código, cada diseño y cada bug superado es mejor cuando formas parte de algo más grande.
+                    </p>
+            
+                    <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>🔗 Recursos que te impulsan</h3>
+                        <p>Accede a <strong>guías, plantillas, servidores, comunidades y tutoriales</strong> sin importar tu nivel.</p>
+                    </div>
+            
+                    <div class="feature-item">
+                        <h3>🚀 Comparte tu progreso</h3>
+                        <p>Muéstranos tu juego, idea o demo. Recibe <strong>feedback real y motivación constante</strong>.</p>
+                    </div>
+            
+                    <div class="feature-item">
+                        <h3>🤝 Encuentra aliados épicos</h3>
+                        <p>Conecta con <strong>artistas, músicos, programadores y diseñadores</strong> para crear juntos.</p>
+                    </div>
+            
+                    <div class="feature-item">
+                        <h3>🏆 Retos y eventos</h3>
+                        <p>Participa en <strong>retos, game jams y concursos mensuales</strong> que pondrán a prueba tu talento.</p>
+                    </div>
+            
+                    <div class="feature-item">
+                        <h3>🌟 Historias que inspiran</h3>
+                        <p>Descubre a quienes <strong>empezaron desde cero</strong> y hoy publican juegos o trabajan en estudios.</p>
+                    </div>
+                    </div>
+                    <p class="highlighted-text">
+                    🔥 No esperes más. <em>Tu comunidad te está esperando.</em>
+                    </p>
+                </div>
+                </div>
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/fOyhiBD2UPY?si=AQcPEhyZjOlbXW59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+                <center>
+                    <img src="comunidad1.jpeg" alt="udemi,edx"  class="click-img" onclick="toggleSize(this)">
+                    <img src="comunidad3.jpeg" alt="documentos"  class="click-img" onclick="toggleSize(this)">
+                    <img src="comunidad4.jpeg" alt="documentos"  class="click-img" onclick="toggleSize(this)">
+                    <img src="comunidad5.jpeg" alt="documentos"  class="click-img" onclick="toggleSize(this)">
+                    <script>
+                    function toggleSize(img) {
+                    img.classList.toggle("enlarged");
+                    }
+                    </script>
+            </center>
+        </section>
+                
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GameDev</h3>
+                <p>Tu portal de aprendizaje para el desarrollo de videojuegos profesionales e independientes.</p>
+                <div class="footer-logo">
+                    <img src="./logo.png" alt="Logo GameDev" class="logo-img">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="roles.html">Roles</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

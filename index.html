@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Videojuegos - GameDev</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <style>
+        .click-img {
+        width: 150px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        border-radius: 10%;
+        border: 5px;
+        }
+
+        .click-img.enlarged {
+        transform: scale(2);
+        }
+    </style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logo.png" alt="Logo GameDev" class="logo-img">
+            <span class="logo-text">GameDev</span>
+            <img src="holonit.gif" alt="Descripción del GIF" class="logo-img">
+
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="roles.html">👥 Roles</a></li>
+            <li><a href="recursos.html">🛠️ Recursos</a></li>
+            <li><a href="comunidad.html">💬 Comunidad</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Desarrollo de Videojuegos</h1>
+                <h2>Domina el arte de crear mundos interactivos</h2>
+                <div class="hero-buttons">
+                    <a href="roles.html" class="btn-secondary">Explorar Roles</a>
+                    <a href="recursos.html" class="btn-secondary">Ver Recursos</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </header>
+
+        <section class="content-section">
+            <div class="card">
+                <div class="card-header">
+                    ❓
+                    <h2>¿Qué aprenderás en este sitio?</h2>
+                </div>
+                <div class="card-body">
+                    <p>En este sitio te sumergirás en el fascinante universo del desarrollo de videojuegos, donde la creatividad y la tecnología se unen para dar vida a experiencias únicas. Aprenderás que detrás de cada juego existe un complejo proceso de creación que va mucho más allá de simples líneas de código.</p>
+                    <div class="features-grid">
+                        <center><div class="feature-item">
+                            💻
+                            <h3>Técnicas Avanzadas</h3>
+                            <p>Domina las últimas tecnologías en desarrollo de juegos</p>
+                            
+                        </div>
+                        <img src="tecnicas.jpg" alt="tecnicas" class="click-img" onclick="toggleSize(this)">
+                        <script>
+                            function toggleSize(img) {
+                            img.classList.toggle("enlarged");
+                            }
+                        </script></center>
+                        <center> <div class="feature-item">
+                            🎨
+                            <h3>Diseño Creativo</h3>
+                            <p>Aprende principios de diseño de juegos y narrativa</p>
+                        </div>
+                        <img src="diseño.gif" alt="diseño" class="click-img" onclick="toggleSize(this)">
+                        <script>
+                            function toggleSize(img) {
+                            img.classList.toggle("enlarged");
+                            }
+                        </script></center>
+                        <center><div class="feature-item">
+                            🤝
+                            <h3>Trabajo en Equipo</h3>
+                            <p>Descubre cómo colaborar efectivamente en proyectos</p>
+                        </div>
+                        <img src="t-equipo.jpg" alt="equipo" class="click-img" onclick="toggleSize(this)">
+                        <script>
+                            function toggleSize(img) {
+                            img.classList.toggle("enlarged");
+                            }
+                        </script></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/2rDuk0AMA5U?si=jEdZZlhnmOFQr2VH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GameDev</h3>
+                <p>Tu portal de aprendizaje para el desarrollo de videojuegos profesionales e independientes.</p>
+                <div class="footer-logo">
+                    <img src="./logo.png" alt="Logo GameDev" class="logo-img">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="roles.html">Roles</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
